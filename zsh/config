@@ -4,7 +4,7 @@
 export EDITOR="code --new-window"
 eval "$(rbenv init -)"
 eval "$(thefuck --alias dang)"
-
+eval "$(starship init zsh)"
 # setup nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -71,32 +71,32 @@ bindkey '^[[5D' beginning-of-line
 bindkey '^[[5C' end-of-line
 bindkey '^[[3~' delete-char
 bindkey '^[^N' newtab
-bindkey '^?' backward-delete-char 
+bindkey '^?' backward-delete-char
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
 cat << "EOF"
-                     .mmMMMMMMMMMMMMMmm.                              
-                 .mMMMMMMMMMMMMMMMMMMMMMMMm.                          
-              .mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMm.                       
-            .MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.                     
-          .MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.                   
-         MMMMMMMM'  `"MMMMM"""""""MMMM""`  'MMMMMMMM                  
-        MMMMMMMMM                           MMMMMMMMM                 
-       MMMMMMMMMM:                         :MMMMMMMMMM                
-      .MMMMMMMMMM                           MMMMMMMMMM.               
-      MMMMMMMMM"                             "MMMMMMMMM               
-      MMMMMMMMM                               MMMMMMMMM               
-      MMMMMMMMM                               MMMMMMMMM               
-      MMMMMMMMMM                             MMMMMMMMMM               
-      `MMMMMMMMMM                           MMMMMMMMMM`               
-       MMMMMMMMMMMM.                     .MMMMMMMMMMMM                
-        MMMMMM  MMMMMMMMMM         MMMMMMMMMMMMMMMMMM                 
-         MMMMMM  'MMMMMMM           MMMMMMMMMMMMMMMM                  
-          `MMMMMM  "MMMMM           MMMMMMMMMMMMMM`                   
-            `MMMMMm                 MMMMMMMMMMMM`                     
-              `"MMMMMMMMM           MMMMMMMMM"`                       
-                 `"MMMMMM           MMMMMM"`                          
-                     `""M           M""`                              
-                          @ethanis
+                     .mmMMMMMMMMMMMMMmm.
+                 .mMMMMMMMMMMMMMMMMMMMMMMMm.
+              .mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMm.
+            .MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.
+          .MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.
+         MMMMMMMM'  `"MMMMM"""""""MMMM""`  'MMMMMMMM
+        MMMMMMMMM                           MMMMMMMMM
+       MMMMMMMMMM:                         :MMMMMMMMMM
+      .MMMMMMMMMM                           MMMMMMMMMM.
+      MMMMMMMMM"                             "MMMMMMMMM
+      MMMMMMMMM                               MMMMMMMMM
+      MMMMMMMMM                               MMMMMMMMM
+      MMMMMMMMMM                             MMMMMMMMMM
+      `MMMMMMMMMM                           MMMMMMMMMM`
+       MMMMMMMMMMMM.                     .MMMMMMMMMMMM
+        MMMMMM  MMMMMMMMMM         MMMMMMMMMMMMMMMMMM
+         MMMMMM  'MMMMMMM           MMMMMMMMMMMMMMMM
+          `MMMMMM  "MMMMM           MMMMMMMMMMMMMM`
+            `MMMMMm                 MMMMMMMMMMMM`
+              `"MMMMMMMMM           MMMMMMMMM"`
+                 `"MMMMMM           MMMMMM"`
+                     `""M           M""`
+                          @rogerprz
 EOF
