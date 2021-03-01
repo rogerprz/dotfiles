@@ -10,6 +10,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# setup rvm
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
 # use spaceship-prompt
 autoload -U promptinit; promptinit
 prompt spaceship
@@ -35,6 +38,7 @@ export PATH="$HOME/bin:$HOME/.bin:/usr/local/bin:/usr/local/bin:/usr/local/sbin:
 export PATH="$PATH:$HOME/Library/Python/2.7/bin"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 export PATH="$PATH:$HOME/.dotnet:$HOME/.dotnet/tools"
+export PATH=$PATH:$(ruby -e 'puts Gem.bindir')
 
 fpath=(~/.zsh/functions $fpath)
 
@@ -86,7 +90,7 @@ cat << "EOF"
        MMMMMMMMMM:                         :MMMMMMMMMM
       .MMMMMMMMMM                           MMMMMMMMMM.
       MMMMMMMMM"                             "MMMMMMMMM
-      MMMMMMMMM                               MMMMMMMMM
+      MMMMMMMMM           @rogerprz           MMMMMMMMM
       MMMMMMMMM                               MMMMMMMMM
       MMMMMMMMMM                             MMMMMMMMMM
       `MMMMMMMMMM                           MMMMMMMMMM`
@@ -98,5 +102,4 @@ cat << "EOF"
               `"MMMMMMMMM           MMMMMMMMM"`
                  `"MMMMMM           MMMMMM"`
                      `""M           M""`
-                          @rogerprz
 EOF

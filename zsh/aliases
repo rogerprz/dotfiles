@@ -66,3 +66,4 @@ alias %=' '
 # random
 alias reload='source ~/.zshrc'
 alias ssh_key='pbcopy < ~/.ssh/id_rsa.pub'
+alias config_dotfiles='code ~/dotfiles'
