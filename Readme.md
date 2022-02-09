@@ -5,7 +5,7 @@ This sets up my macOS environment as I like. These scripts take heavy inspriatio
 ## Installation
 
 ```bash
-$ git clone git://github.com/ethanis/dotfiles ~/.dotfiles
+$ git clone git://github.com/rogerprz/dotfiles ~/.dotfiles
 $ cd ~/.dotfiles
 $ rake install
 ```
